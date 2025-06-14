@@ -1,0 +1,8 @@
+* Deixar dinamico para que possa ser usado em qualquer lugar
+Status: Pendente
+
+* Apagar automaticamente o arquivo html gerado
+Status: Pendente
+
+* Fazer modificações para a imagem ficar igual o markdown de teste
+Status: Pendente
