@@ -6,3 +6,6 @@ Status: Ok 15/06/2025
 
 * Fazer modificações para a imagem ficar igual o markdown de teste
 Status: Ok 15/06/2025
+
+* Inserir a opção do tema dark ou tema light para o user.
+Status: Ok 16/06/2025  

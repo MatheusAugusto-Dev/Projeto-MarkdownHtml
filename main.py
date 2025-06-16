@@ -9,8 +9,11 @@ with open("Teste.md", "r", encoding="utf-8") as f:
 #* Conversão com suporte a código e tabelas
 html_body = markdown.markdown(texto_md, extensions=["fenced_code", "codehilite", "tables"])
 
+#* Variavel para escolher o tema
+opc_tema = int(input("Escolha o tema para o README:\n1 - Light\n2 - Dark\nOpção: "))
+
 #* HTML com estilo e suporte a emojis e tabelas
-html = retorna_html_completo_md(html_body)
+html = retorna_html_completo_md(html_body, 'light' if opc_tema == 1 else 'dark')
 
 #* Salva temporariamente como HTML
 with open("temp.html", "w", encoding="utf-8") as f:
