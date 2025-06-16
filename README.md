@@ -126,4 +126,4 @@ Pull requests são bem-vindos! Se tiver ideias para melhorias ou novos recursos,
 
 ## 🤝 Autor
 
-Desenvolvido com 💻 por Matheus Augusto (https://github.com/MatheusAugusto-Dev)
+Desenvolvido por Matheus Augusto (https://github.com/MatheusAugusto-Dev)
