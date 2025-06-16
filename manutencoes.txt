@@ -2,7 +2,7 @@
 Status: Pendente
 
 * Apagar automaticamente o arquivo html gerado
-Status: Pendente
+Status: Ok 15/06/2025
 
 * Fazer modificações para a imagem ficar igual o markdown de teste
-Status: Pendente
+Status: Ok 15/06/2025
