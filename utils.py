@@ -13,7 +13,7 @@ def apaga_arquivo(caminho_arquivo):
 def retorna_html_completo_md(html_body, theme='dark'):
     dark_css = """
         body {
-            font-family: 'Segoe UI', 'Segoe UI Emoji', 'Noto Color Emoji', 'Apple Color Emoji', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI Emoji', 'Segoe UI', Arial, sans-serif;
             background-color: #0d1117;
             color: #c9d1d9;
             padding: 40px;
@@ -21,8 +21,9 @@ def retorna_html_completo_md(html_body, theme='dark'):
             margin: auto;
             line-height: 1.6;
         }
-        h1, h2, h3 {
-            color: #58a6ff;
+        h1, h2, h3, h4, h5 {
+            color: #0969da;
+            font-family: 'Segoe UI Emoji', 'Segoe UI', Arial, sans-serif;
         }
         table {
             border-collapse: collapse;
@@ -82,7 +83,7 @@ def retorna_html_completo_md(html_body, theme='dark'):
 
     light_css = """
         body {
-            font-family: 'Segoe UI', 'Segoe UI Emoji', 'Noto Color Emoji', 'Apple Color Emoji', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI Emoji', 'Segoe UI', Arial, sans-serif;
             background-color: #fff;
             color: #24292e;
             padding: 40px;
@@ -90,8 +91,9 @@ def retorna_html_completo_md(html_body, theme='dark'):
             margin: auto;
             line-height: 1.6;
         }
-        h1, h2, h3 {
+        h1, h2, h3, h4, h5 {
             color: #0969da;
+            font-family: 'Segoe UI Emoji', 'Segoe UI', Arial, sans-serif;
         }
         table {
             border-collapse: collapse;
