@@ -1,5 +1,9 @@
 import os
 
+def lista_arquivos_md_gerar(caminho_pasta):
+    arquivos_md_para_gerar = os.listdir(caminho_pasta)
+    return arquivos_md_para_gerar
+
 def apaga_arquivo(caminho_arquivo):
     """
     Função para apagar um arquivo específico.

@@ -9,3 +9,27 @@ Status: Ok 15/06/2025
 
 * Inserir a opção do tema dark ou tema light para o user.
 Status: Ok 16/06/2025  
+
+* Adicionar geração de pdf além de png
+Status: Ok 22/06/2025
+
+* Adicionar opção de escolher qual md vai ser convertido, quando ok mover para pasta de ja feitos
+Status: Ok 22/06/2025
+
+* Adicionar forma de gerenciar os arquivos gerados para atualizar, regerar.
+Status: Pendente
+
+* Pensar em algumas tratativas de erro, como por exemplo, usuario digitar coisa errada, se o arquivo não existir, se o arquivo estiver vazio, etc.
+Status: Pendente
+
+* Adicionar validação para verificar se todos os arquivos foram gerados
+Status: Pendente
+
+* Ver se tem como inserir manual index no pdf que te leva pro trecho que voce quer ir
+Status: Pendente
+
+* Fazer metodo com que ele processe mais de um arquivo md de uma vez
+Status: Pendente
+
+* Arrumar thema dark e white que ficou estranho no pdf quando a linha passa do tamanho definido e mudar paleta de cores deles
+Status: Pendente
