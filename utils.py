@@ -16,13 +16,12 @@ def apaga_arquivo(caminho_arquivo):
 
 def retorna_html_completo_md(html_body, theme='dark'):
     dark_css = """
-        body {
+         body {
             font-family: 'Segoe UI Emoji', 'Segoe UI', Arial, sans-serif;
             background-color: #0d1117;
             color: #c9d1d9;
             padding: 40px;
-            max-width: 900px;
-            margin: auto;
+            margin: 0;
             line-height: 1.6;
         }
         h1, h2, h3, h4, h5 {
@@ -41,7 +40,7 @@ def retorna_html_completo_md(html_body, theme='dark'):
         }
         th {
             background-color: #161b22;
-            color: #d2a8ff;
+            color: #167A1E;
         }
         td {
             background-color: #0d1117;
@@ -61,7 +60,7 @@ def retorna_html_completo_md(html_body, theme='dark'):
             padding: 2px 4px;
             border-radius: 4px;
             font-family: monospace;
-            color: #d2a8ff;
+            color: #167A1E;
         }
         pre {
             background-color: #161b22;
@@ -70,6 +69,11 @@ def retorna_html_completo_md(html_body, theme='dark'):
             border-radius: 6px;
             overflow-x: auto;
             font-size: 14px;
+        }
+        pre, code {
+            white-space: pre-wrap;   /* Permite quebras dentro de blocos de código */
+            word-break: break-all;   /* Quebra palavras longas/sequências */
+            overflow-wrap: break-word;
         }
         blockquote {
             border-left: 4px solid #30363d;
@@ -86,17 +90,17 @@ def retorna_html_completo_md(html_body, theme='dark'):
     """
 
     light_css = """
-        body {
+         body {
             font-family: 'Segoe UI Emoji', 'Segoe UI', Arial, sans-serif;
             background-color: #fff;
             color: #24292e;
             padding: 40px;
-            max-width: 900px;
-            margin: auto;
+            /* Remova max-width */
+            margin: 0; /* Remova ou zere o margin */
             line-height: 1.6;
         }
         h1, h2, h3, h4, h5 {
-            color: #0969da;
+            color: #054288;
             font-family: 'Segoe UI Emoji', 'Segoe UI', Arial, sans-serif;
         }
         table {
@@ -111,7 +115,7 @@ def retorna_html_completo_md(html_body, theme='dark'):
         }
         th {
             background-color: #f6f8fa;
-            color: #8250df;
+            color: #167A1E;
         }
         td {
             background-color: #fff;
@@ -126,12 +130,13 @@ def retorna_html_completo_md(html_body, theme='dark'):
         a {
             color: #0969da;
         }
+
         code {
             background-color: #f6f8fa;
             padding: 2px 4px;
             border-radius: 4px;
             font-family: monospace;
-            color: #8250df;
+            color: #167A1E;
         }
         pre {
             background-color: #f6f8fa;
@@ -140,6 +145,11 @@ def retorna_html_completo_md(html_body, theme='dark'):
             border-radius: 6px;
             overflow-x: auto;
             font-size: 14px;
+        }
+        pre, code {
+            white-space: pre-wrap;   /* Permite quebras dentro de blocos de código */
+            word-break: break-all;   /* Quebra palavras longas/sequências */
+            overflow-wrap: break-word;
         }
         blockquote {
             border-left: 4px solid #d0d7de;

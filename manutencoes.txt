@@ -16,6 +16,12 @@ Status: Ok 22/06/2025
 * Adicionar opção de escolher qual md vai ser convertido, quando ok mover para pasta de ja feitos
 Status: Ok 22/06/2025
 
+* Arrumar thema dark e white que ficou estranho no pdf quando a linha passa do tamanho definido e mudar paleta de cores deles
+Status: Ok 24/06/2025
+
+* Fazer metodo com que ele processe mais de um arquivo md de uma vez
+Status: Ok 24/06/2025
+
 * Adicionar forma de gerenciar os arquivos gerados para atualizar, regerar.
 Status: Pendente
 
@@ -28,8 +34,6 @@ Status: Pendente
 * Ver se tem como inserir manual index no pdf que te leva pro trecho que voce quer ir
 Status: Pendente
 
-* Fazer metodo com que ele processe mais de um arquivo md de uma vez
+* Arrumar para pegar pdf inteiro e não só a parte visivel
 Status: Pendente
 
-* Arrumar thema dark e white que ficou estranho no pdf quando a linha passa do tamanho definido e mudar paleta de cores deles
-Status: Pendente
