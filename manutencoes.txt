@@ -22,6 +22,21 @@ Status: Ok 24/06/2025
 * Fazer metodo com que ele processe mais de um arquivo md de uma vez
 Status: Ok 24/06/2025
 
+* Fechar cmd sozinho
+Status: Ok 25/06/2025
+
+Limpar cmd deixar só mensagens relevantes
+Status: Ok 25/06/2025
+
+Arrumar erro de quando já tiver arquivo substituir
+Status: Pendente
+
+Inserir manual no markdown
+Status: Pendente
+
+Procurar se existe em outra pasta quando for atualizar e dar opção se quer atualizar em quais pastas
+Status: Pendente
+
 * Adicionar forma de gerenciar os arquivos gerados para atualizar, regerar.
 Status: Pendente
 

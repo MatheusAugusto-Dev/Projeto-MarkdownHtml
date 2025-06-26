@@ -1,13 +1,26 @@
 import shutil
 import markdown
 import imgkit
-import os
+import os, sys
+import warnings
+import logging
+import time
 from utils import *
 from weasyprint import HTML
 from credenciais import *
 
+#* Configuraação para limpar o terminal de mensagens de avisos e loggins
+warnings.filterwarnings("ignore")
+logging.getLogger().setLevel(logging.ERROR)
+
+#* Limpa o terminal de mensagens externas e continua depois de 2 segundos
+time.sleep(1)
+os.system("cls")
+time.sleep(1)
+
 while True:
 #*Menu
+
     print("Escolha qual arquivo MD voce deseja transformar em Imagem e PDF:")
     print("Digite a opcao numerica correspondente ao arquivo desejado!!!")
     arquivos_md_para_gerar = lista_arquivos_md_gerar(CAMINHO_PASTAS['pasta_md_para_gerar'])
@@ -64,4 +77,11 @@ while True:
     if opc_continuar_programa == 2:
         break
 
-print("Codigo executado com sucesso!\n\n\n\n\n")
+    #* Limpa o terminal
+    os.system("cls")    
+
+#* Fecha o terminal se nao for aberto manualmente
+sys.exit()
+
+
+
