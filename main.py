@@ -7,7 +7,10 @@ import logging
 import time
 from utils import *
 from weasyprint import HTML
-from credenciais import *
+from dotenv import load_dotenv
+
+#* Carrega .env
+load_dotenv()
 
 #* Configuraação para limpar o terminal de mensagens de avisos e loggins
 warnings.filterwarnings("ignore")
@@ -18,12 +21,15 @@ time.sleep(1)
 os.system("cls")
 time.sleep(1)
 
-while True:
-#*Menu
+#* Atribui variaveis do .env
+pasta_md_gerar = os.getenv("PASTA_MD_GERAR")
+pasta_md_gerados = os.getenv("PASTA_MD_GERADOS")
 
+while True:
+    #*Menu
     print("Escolha qual arquivo MD voce deseja transformar em Imagem e PDF:")
     print("Digite a opcao numerica correspondente ao arquivo desejado!!!")
-    arquivos_md_para_gerar = lista_arquivos_md_gerar(CAMINHO_PASTAS['pasta_md_para_gerar'])
+    arquivos_md_para_gerar = lista_arquivos_md_gerar(pasta_md_gerar)
     for i, nome_arquivo in enumerate(arquivos_md_para_gerar):
         print(f"{i} - {nome_arquivo}")
 
@@ -33,7 +39,7 @@ while True:
     nome_arquivo_md_selecionado_sem_extensao = nome_arquivo_md_selecionado.split(".")[0]
 
     #* Defini a string de caminho completa do arquivo
-    caminho_pasta_arquivo_md_gerar = os.path.join(CAMINHO_PASTAS['pasta_md_para_gerar'], nome_arquivo_md_selecionado)
+    caminho_pasta_arquivo_md_gerar = os.path.join(pasta_md_gerar, nome_arquivo_md_selecionado)
 
     #* Carrega o markdown e converte para HTML
     with open(caminho_pasta_arquivo_md_gerar, "r", encoding="utf-8") as f:
@@ -69,9 +75,9 @@ while True:
     apaga_arquivo(f"{nome_arquivo_md_selecionado_sem_extensao}.html")
 
     #* Move arquivos gerados para a pasta de destino dos md
-    shutil.move(caminho_pasta_arquivo_md_gerar, CAMINHO_PASTAS['pasta_md_gerados'])
-    shutil.move(f"{nome_arquivo_md_selecionado_sem_extensao}.pdf", CAMINHO_PASTAS['pasta_md_gerados'])
-    shutil.move(f"{nome_arquivo_md_selecionado_sem_extensao}.png", CAMINHO_PASTAS['pasta_md_gerados'])
+    shutil.move(caminho_pasta_arquivo_md_gerar, pasta_md_gerados)
+    shutil.move(f"{nome_arquivo_md_selecionado_sem_extensao}.pdf", pasta_md_gerados)
+    shutil.move(f"{nome_arquivo_md_selecionado_sem_extensao}.png", pasta_md_gerados)
 
     opc_continuar_programa = int(input("Deseja continuar? (1 - Sim, 2 - Não): "))
     if opc_continuar_programa == 2:

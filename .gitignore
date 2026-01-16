@@ -1,2 +1,6 @@
 credenciais.py
 __pycache__/
+manutencoes.txt
+venv/
+requirements.txt
+.env
